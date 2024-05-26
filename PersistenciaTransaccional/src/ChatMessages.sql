@@ -1,0 +1,7 @@
+CREATE TABLE ChatMessages (
+    MessageID INT PRIMARY KEY AUTO_INCREMENT,
+    Sender VARCHAR(255) NOT NULL,
+    Receiver VARCHAR(255) NOT NULL,
+    MessageText TEXT,
+    Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
