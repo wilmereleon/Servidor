@@ -4,11 +4,9 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import java.io.*;
 import java.net.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Servidor {
-    private static final int PORT = 12345;
+    private static final int PORT = 3307; // Cambia esto al puerto correcto
     private static List<PrintWriter> clientWriters = new ArrayList<>();
     private static final Logger log = Logger.getLogger(Servidor.class);
 
@@ -68,4 +66,3 @@ public class Servidor {
         }
     }
 }
-
